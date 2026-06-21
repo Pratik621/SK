@@ -3,6 +3,20 @@ import { Link } from 'react-router-dom';
 import './Hero.css';
 import vmc from '../assets/vmc.mp4';
 import shaft from "../assets/shaft.png";
+import cnc1 from "../assets/cnc1.png"
+import cnc2 from "../assets/cnc2.png"
+import vmc1 from "../assets/vmc1.png"
+import vmc2 from "../assets/vmc2.png"
+import vmc3 from "../assets/vmc3.png"
+import vmc4 from "../assets/vmc4.png"
+import vmc5 from "../assets/vmc5.png"
+
+import cnc3 from "../assets/cnc3.png"
+import cnc4 from "../assets/cnc4.png"
+import cnc5 from "../assets/cnc5.png"
+import cnc6 from "../assets/cnc6.png"
+import cnc7 from "../assets/cnc7.png"
+
 
 const stats = [
   { value: '500+', label: 'Projects Delivered' },
@@ -12,6 +26,8 @@ const stats = [
 ];
 
 export default function Hero() {
+
+
   return (
     <>
     <section id="home" className="hero">
@@ -19,8 +35,6 @@ export default function Hero() {
         <div className="hero-grid"></div>
         <div className="hero-orb orb1"></div>
         <div className="hero-orb orb2"></div>
-        <div className="floating-badge badge1"><Zap size={14} /> CNC Machining</div>
-        <div className="floating-badge badge2"><Shield size={14} /> ISO Quality</div>
         <div className="floating-badge badge3"><Clock size={14} /> On-Time Delivery</div>
       </div>
 
@@ -104,8 +118,11 @@ export default function Hero() {
             </div>
           </div>
         </div>
+      
+       
        
       </div>
+     
       
 
     </section>
@@ -145,8 +162,24 @@ export default function Hero() {
 
       {/* <button className="vmc-btn">Contact for VMC Work</button> */}
     </div>
-
+ 
   </div>
+ <div className="vmc-marquee">
+  <div className="vmc-track">
+    <img src={vmc1} alt="" />
+    <img src={vmc2} alt="" />
+    <img src={vmc3} alt="" />
+    <img src={vmc4} alt="" />
+    <img src={vmc5} alt="" />
+
+    {/* Duplicate for infinite loop */}
+    <img src={vmc1} alt="" />
+    <img src={vmc2} alt="" />
+    <img src={vmc3} alt="" />
+    <img src={vmc4} alt="" />
+    <img src={vmc5} alt="" />
+  </div>
+</div>
 </section>
 <section className="cnc-section">
   <div className="cnc-container">
@@ -185,8 +218,26 @@ export default function Hero() {
     <div className="cnc-image">
       <img src={shaft} alt="CNC Machining" />
     </div>
+    
 
   </div>
+
+   <div className="vmc-marquee">
+  <div className="vmc-track">
+    <img src={cnc3} alt="" />
+    <img src={cnc4} alt="" />
+    <img src={cnc5} alt="" />
+    <img src={cnc6} alt="" />
+    <img src={cnc7} alt="" />
+
+    {/* Duplicate for infinite loop */}
+    <img src={cnc3} alt="" />
+    <img src={cnc4} alt="" />
+    <img src={cnc5} alt="" />
+    <img src={cnc6} alt="" />
+    <img src={cnc7} alt="" />
+  </div>
+</div>
 </section>
 </>
   );

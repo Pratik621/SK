@@ -48,7 +48,7 @@ export default function Navbar() {
             <img src={logo} alt="" />
             </div>
             <div>
-              <span className="brand-name">SK ENGINEERING</span>
+              <span className="brand-name nav-name" >SK ENGINEERING</span>
               <span className="brand-sub">Precision Manufacturing</span>
             </div>
           </NavLink>
@@ -85,10 +85,17 @@ export default function Navbar() {
       <div className={`drawer ${open ? 'open' : ''}`}>
         <div className="drawer-header">
           <div className="drawer-brand">
-            <div className="brand-icon"><Cog size={20} /></div>
+            <div className="brand-icon">
+            <img src={logo} alt="" />
+            </div>
             <div>
-              <span className="brand-name">SK ENGINEERING</span>
-              <span className="brand-sub">Precision Manufacturing</span>
+             <span
+  className="brand-name nav-name"
+  style={{ color: "#fff" }}
+>
+  SK ENGINEERING
+</span>
+              <span className="brand-sub" style={{ color: "#fff" }}>Precision Manufacturing</span>
             </div>
           </div>
           <button className="drawer-close" onClick={() => setOpen(false)} aria-label="Close menu">

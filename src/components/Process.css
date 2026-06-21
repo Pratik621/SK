@@ -130,3 +130,67 @@
 
   .step-content::after { display: none; }
 }
+.shaft-showcase {
+  padding: 100px 0;
+}
+
+.shaft-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.shaft-header h2 {
+  font-size: 3rem;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.shaft-header h2 span {
+  color: #1a56db;
+}
+
+.shaft-header p {
+  color: #64748b;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.shaft-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.shaft-card {
+  overflow: hidden;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+}
+
+.shaft-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
+  padding: 20px;
+  transition: transform 0.5s ease;
+}
+
+.shaft-card:hover {
+  transform: translateY(-8px);
+}
+
+.shaft-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Make last two images centered */
+.shaft-card:nth-child(4) {
+  grid-column: 1 / 2;
+}
+
+.shaft-card:nth-child(5) {
+  grid-column: 3 / 4;
+}

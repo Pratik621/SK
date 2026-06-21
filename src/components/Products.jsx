@@ -1,4 +1,10 @@
 import './Products.css';
+// import shaft from "../assets/shaft.png"
+import shaft1 from "../assets/shaft1.png"
+import shaft2 from "../assets/shaft2.png"
+import shaft3 from "../assets/shaft3.png"
+import shaft4 from "../assets/shaft4.png"
+import shaft5 from "../assets/shaft5.png"
 
 const productCategories = [
   {
@@ -59,6 +65,51 @@ export default function Products() {
             to hydraulic fixtures, dies, and special purpose machines.
           </p>
         </div>
+
+        <section className="shaft-showcase">
+  <div className="shaft-header">
+    <span className="section-tag">Premium Shaft Manufacturing</span>
+
+    <h2>
+      Precision Shafts Built With
+      <span> 9+ Years of Expertise</span>
+    </h2>
+
+    <p>
+      For over 9 years, SK Engineering has been delivering high-quality
+      precision shafts for automotive, industrial machinery, automation,
+      hydraulic systems, and heavy engineering applications. Our expertise in
+      CNC turning, grinding, and precision machining ensures exceptional
+      dimensional accuracy, durability, and surface finish.
+    </p>
+  </div>
+
+  <div className="shaft-grid">
+    {/* <div className="shaft-card">
+      <img src={shaft} alt="Precision Shaft" />
+    </div> */}
+
+    <div className="shaft-card">
+      <img src={shaft1} alt="Industrial Shaft" />
+    </div>
+
+    <div className="shaft-card">
+      <img src={shaft2} alt="Machined Shaft" />
+    </div>
+
+    <div className="shaft-card">
+      <img src={shaft3} alt="Custom Shaft" />
+    </div>
+
+    <div className="shaft-card">
+      <img src={shaft4} alt="Engineering Shaft" />
+    </div>
+
+     <div className="shaft-card">
+      <img src={shaft5} alt="Engineering Shaft" />
+    </div>
+  </div>
+</section>
 
         <div className="products-grid">
           {productCategories.map(cat => (
