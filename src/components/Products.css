@@ -1,67 +1,104 @@
-.products { background: #f8faff; }
+/* Shaft Section */
+.shaft-showcase {
+  margin: 60px 0;
+}
 
-.products-grid {
+.shaft-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.shaft-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.shaft-header span {
+  color: #1a56db;
+}
+
+.shaft-header p {
+  color: #6b7280;
+  line-height: 1.8;
+}
+
+.shaft-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
-.product-category { padding: 0; overflow: hidden; }
-
-.category-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 20px 24px;
-  border-bottom: 3px solid;
-  background: #f9fafb;
+.shaft-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-.category-emoji { font-size: 1.6rem; }
-
-.category-header h3 {
-  font-size: 1rem;
-  font-weight: 800;
-  margin: 0;
-}
-
-.product-list {
-  list-style: none;
-  padding: 16px 24px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.product-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.product-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  margin-top: 6px;
-}
-
-.product-item strong {
+.shaft-card img {
+  width: 100%;
   display: block;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #1f2937;
-  margin-bottom: 2px;
+  height: auto;
 }
 
-.product-item p {
-  font-size: 0.8rem;
-  color: #6b7280;
-  line-height: 1.5;
-  margin: 0;
-}
-
+/* MOBILE: Full-screen vertical scroll gallery */
 @media (max-width: 768px) {
-  .products-grid { grid-template-columns: 1fr; }
+
+  /* prevent horizontal scroll while allowing vertical page scroll */
+  .products {
+    overflow-x: hidden;
+  }
+
+  .products .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .products-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  /* Force a single-column flow for the shaft section on mobile */
+  .shaft-grid {
+    display: block !important;
+    width: 100%;
+  }
+
+  /* Each shaft card becomes a full-viewport snap section */
+  html, body {
+    scroll-snap-type: y mandatory;
+  }
+
+  .products .shaft-card {
+    height: 100vh;
+    scroll-snap-align: start;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    margin: 0 0 12px 0;
+    padding: 12px;
+  }
+
+  .products .shaft-card img {
+    transform: rotate(90deg);
+    max-width: 80vw;
+    max-height: 80vh;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* ensure other page content is not snapped and normal scroll resumes */
+  .products + * {
+    scroll-snap-align: none;
+  }
+
 }
