@@ -121,7 +121,7 @@ export default function Navbar() {
             <Phone size={16} /> Call Now
           </a>
           <a
-            href="https://wa.me/919999999999?text=Hello, I need a quote from SK Engineering"
+            href="https://wa.me/917499165461?text=Hello, I need a quote from SK Engineering"
             target="_blank"
             rel="noopener noreferrer"
             className="drawer-wa"

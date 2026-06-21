@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Cog, Phone, Mail, MapPin, MessageCircle, ArrowRight } from 'lucide-react';
 import './Footer.css';
+import logo from "../../public/vite.png"
+
 
 const services = ['CNC Turning', 'CNC Profiling', 'VMC Machining', 'TROB Machining', 'Broaching', 'CMM', 'Grinding', 'Hardening'];
 const quickLinks = [
@@ -23,7 +25,9 @@ export default function Footer() {
 
           <div className="footer-brand">
             <div className="footer-logo">
-              <div className="footer-logo-icon"><Cog size={22} /></div>
+              <div className="brand-icon">
+                         <img src={logo} alt="" />
+                         </div>
               <div>
                 <span className="footer-name">SK ENGINEERING</span>
                 <span className="footer-tagline">Precision Manufacturing — Est. 2016</span>
@@ -40,7 +44,7 @@ export default function Footer() {
               <span><MapPin size={15} /> Bhosari, Pune, Maharashtra</span>
             </div>
             <a
-              href="https://wa.me/919999999999?text=Hello, I need a quote from SK Engineering"
+              href="https://wa.me/917499165461?text=Hello, I need a quote from SK Engineering"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-wa"
@@ -81,8 +85,8 @@ export default function Footer() {
             </Link>
             <div className="footer-hours">
               <h5>Working Hours</h5>
-              <p>Mon – Sat: 9:00 AM – 7:00 PM</p>
-              <p>Sunday: By Appointment</p>
+              <p>Wed - Tue 24*7</p>
+              <p>Thursday: By Appointment</p>
             </div>
           </div>
 

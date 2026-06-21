@@ -60,7 +60,7 @@ export default function Hero() {
               Get a Quote <ArrowRight size={18} />
             </Link>
             <a
-              href="https://wa.me/919999999999?text=Hello, I need a quote from SK Engineering"
+              href="https://wa.me/917499165461?text=Hello, I need a quote from SK Engineering"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline"
@@ -211,14 +211,13 @@ export default function Hero() {
         <li>Quality Inspection & Testing</li>
       </ul>
 
-      <button className="cnc-btn">Get a Quote</button>
+      <Link to="/contact" className="cnc-btn">Get a Quote</Link>
     </div>
 
     {/* Right Side - Image */}
     <div className="cnc-image">
       <img src={shaft} alt="CNC Machining" />
     </div>
-    
 
   </div>
 
