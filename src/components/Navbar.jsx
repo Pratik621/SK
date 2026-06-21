@@ -66,7 +66,7 @@ export default function Navbar() {
               </li>
             ))}
             <li>
-              <a href="tel:+919999999999" className="btn-primary nav-call">
+              <a href="tel:+917499165461" className="btn-primary nav-call">
                 <Phone size={15} /> Call Now
               </a>
             </li>
@@ -117,7 +117,7 @@ export default function Navbar() {
         </nav>
 
         <div className="drawer-footer">
-          <a href="tel:+919999999999" className="btn-primary drawer-call">
+          <a href="tel:+917499165461" className="btn-primary drawer-call">
             <Phone size={16} /> Call Now
           </a>
           <a
