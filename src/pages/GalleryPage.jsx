@@ -6,7 +6,7 @@ export default function GalleryPage() {
     <>
       <PageHero
         title="Machinery Gallery"
-        subtitle="State-of-the-art CNC, VMC, CMM, broaching, heat treatment, and electroplating machines at SK ENGINEERING."
+        subtitle="State-of-the-art CNC, VMC, CMM, broaching, heat treatment, and electroplating machines at S K ENGINEERING."
       />
       <Gallery />
     </>

@@ -34,7 +34,7 @@ export default function WhyUs() {
         <div className="whyus-grid">
           <div className="why-left">
             <span className="section-tag">Why Choose Us</span>
-            <h2 className="section-title">Why Choose <span style={{ color: '#1a56db' }}>SK ENGINEERING?</span></h2>
+            <h2 className="section-title">Why Choose <span style={{ color: '#1a56db' }}>S K ENGINEERING?</span></h2>
             <p style={{ color: '#6b7280', marginBottom: '2rem', lineHeight: 1.7 }}>
               We combine advanced technology, skilled expertise, and unwavering commitment
               to quality to deliver engineering solutions that exceed expectations.

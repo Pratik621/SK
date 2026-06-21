@@ -19,7 +19,7 @@ export default function Quality() {
             <div className="quality-badge"><Shield size={20} /> Quality Assurance</div>
             <h2>Quality Is Our <span>Highest Priority</span></h2>
             <p>
-              At SK ENGINEERING, every component undergoes rigorous inspection and quality checks
+              At S K ENGINEERING, every component undergoes rigorous inspection and quality checks
               throughout the manufacturing process. We maintain strict standards to ensure
               dimensional accuracy, performance reliability, and customer satisfaction.
             </p>

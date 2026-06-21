@@ -54,7 +54,7 @@ export default function Gallery() {
             Our Infrastructure
           </span>
           <h2>Gallery of <span>Our Machinery</span></h2>
-          <p>State-of-the-art machines powering precision manufacturing at SK ENGINEERING</p>
+          <p>State-of-the-art machines powering precision manufacturing at S K ENGINEERING</p>
         </div>
       </div>
 

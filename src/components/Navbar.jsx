@@ -48,7 +48,7 @@ export default function Navbar() {
             <img src={logo} alt="" />
             </div>
             <div>
-              <span className="brand-name nav-name" >SK ENGINEERING</span>
+              <span className="brand-name nav-name" >S K ENGINEERING</span>
               <span className="brand-sub">Precision Manufacturing</span>
             </div>
           </NavLink>
@@ -93,7 +93,7 @@ export default function Navbar() {
   className="brand-name nav-name"
   style={{ color: "#fff" }}
 >
-  SK ENGINEERING
+  S K ENGINEERING
 </span>
               <span className="brand-sub" style={{ color: "#fff" }}>Precision Manufacturing</span>
             </div>
@@ -121,7 +121,7 @@ export default function Navbar() {
             <Phone size={16} /> Call Now
           </a>
           <a
-            href="https://wa.me/917499165461?text=Hello, I need a quote from SK Engineering"
+            href="https://wa.me/917499165461?text=Hello, I need a quote from S K Engineering"
             target="_blank"
             rel="noopener noreferrer"
             className="drawer-wa"

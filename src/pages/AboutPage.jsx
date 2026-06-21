@@ -7,7 +7,7 @@ export default function AboutPage() {
     <>
       <PageHero
         title="About Us"
-        subtitle="SK ENGINEERING — established in 2016, with 25+ years of combined expertise in high precision machining and worldwide delivery."
+        subtitle="S K ENGINEERING — established in 2016, with 25+ years of combined expertise in high precision machining and worldwide delivery."
       />
       <About />
       <Quality />

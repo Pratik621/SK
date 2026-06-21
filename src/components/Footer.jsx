@@ -44,7 +44,7 @@ export default function Footer() {
               <span><MapPin size={15} /> Bhosari, Pune, Maharashtra</span>
             </div>
             <a
-              href="https://wa.me/917499165461?text=Hello, I need a quote from SK Engineering"
+              href="https://wa.me/917499165461?text=Hello, I need a quote from S K Engineering"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-wa"
@@ -95,7 +95,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
-          <p>© {new Date().getFullYear()} SK ENGINEERING. All Rights Reserved. | Bhosari, Pune, Maharashtra, India</p>
+          <p>© {new Date().getFullYear()} S K ENGINEERING. All Rights Reserved. | Bhosari, Pune, Maharashtra, India</p>
           <p>Precision Engineering &amp; CNC Manufacturing — Est. 2016</p>
         </div>
       </div>

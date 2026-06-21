@@ -76,7 +76,7 @@ export default function Products() {
     </h2>
 
     <p>
-      For over 9 years, SK Engineering has been delivering high-quality
+      For over 9 years, S K Engineering has been delivering high-quality
       precision shafts for automotive, industrial machinery, automation,
       hydraulic systems, and heavy engineering applications. Our expertise in
       CNC turning, grinding, and precision machining ensures exceptional

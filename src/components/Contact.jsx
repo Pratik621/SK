@@ -23,7 +23,7 @@ export default function Contact() {
           <div className="info-card">
             <div className="contact-card-header">
               <span>Get In Touch</span>
-              <h2>Contact SK ENGINEERING</h2>
+              <h2>Contact S K ENGINEERING</h2>
               <p>Reach out for quotes, inquiries, or project details and our team will respond promptly.</p>
             </div>
 
@@ -69,7 +69,7 @@ export default function Contact() {
 
             <div className="map-container">
               <iframe
-                title="SK Engineering Location"
+                title="S K Engineering Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.0!2d73.8567!3d18.6298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e760000001%3A0x1!2sBhosari%2C+Pune%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                 width="100%"
                 height="240"
@@ -91,7 +91,7 @@ export default function Contact() {
               <input
                 type="hidden"
                 name="access_key"
-                value="969d10e8-50d6-4c00-9961-a282448b7fef"
+                value="f7945211-36b3-4080-afeb-06021c461704"
               />
               <input
                 type="hidden"
@@ -101,7 +101,7 @@ export default function Contact() {
               <input
                 type="hidden"
                 name="subject"
-                value="SK ENGINEERING Contact Request"
+                value="S K ENGINEERING Contact Request"
               />
 
               <div className="form-row">

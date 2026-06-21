@@ -50,7 +50,7 @@ export default function Hero() {
             Industries
           </h1>
           <p className="hero-desc">
-            SK ENGINEERING is a trusted manufacturing and precision engineering company
+            S K ENGINEERING is a trusted manufacturing and precision engineering company
             specializing in CNC machining, VMC machining, shaft manufacturing, grinding,
             drilling, and custom engineering solutions. We deliver superior quality
             components with precision, reliability, and commitment to excellence.
@@ -60,7 +60,7 @@ export default function Hero() {
               Get a Quote <ArrowRight size={18} />
             </Link>
             <a
-              href="https://wa.me/917499165461?text=Hello, I need a quote from SK Engineering"
+              href="https://wa.me/917499165461?text=Hello, I need a quote from S K Engineering"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline"
@@ -139,7 +139,7 @@ export default function Hero() {
       <h2>VMC Machining Services</h2>
 
       <p>
-        At <strong>SK ENGINEERING</strong>, we provide high-precision VMC
+        At <strong>S K ENGINEERING</strong>, we provide high-precision VMC
         machining services for industrial components, machine parts, shafts,
         dies, fixtures, and customized engineering products.
       </p>
@@ -191,7 +191,7 @@ export default function Hero() {
       <h2>CNC Machining Services</h2>
 
       <p>
-        At <strong>SK ENGINEERING</strong>, we specialize in high-precision CNC
+        At <strong>S K ENGINEERING</strong>, we specialize in high-precision CNC
         machining for shafts, industrial components, machine parts, and custom
         engineering solutions.
       </p>

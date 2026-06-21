@@ -58,7 +58,7 @@ export default function About() {
             <div className="image-placeholder">
               <div className="image-inner">
                 <div className="gear-anim">⚙️</div>
-                <h3>SK ENGINEERING</h3>
+                <h3>S K ENGINEERING</h3>
                 <p>Bhosari, Pune — Est. 2016</p>
                 <div className="image-stats">
                   <div><strong>25+</strong><span>Years Exp.</span></div>
@@ -84,7 +84,7 @@ export default function About() {
             <span className="section-tag">About Us</span>
             <h2 className="section-title">About <span style={{ color: '#1a56db' }}>SK ENGINEERING</span></h2>
             <p className="about-para">
-              SK ENGINEERING is a leading precision engineering and manufacturing company located in
+              S K ENGINEERING is a leading precision engineering and manufacturing company located in
               Bhosari, Pune, one of Maharashtra's prominent industrial hubs. We specialize in delivering
               high-quality engineering components and machining services to industries requiring precision,
               reliability, and superior workmanship.
