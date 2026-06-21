@@ -1,0 +1,217 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 18px 0;
+  background: transparent;
+  transition: all 0.4s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+  padding: 12px 0;
+}
+
+/* When scrolled — dark text */
+.navbar.scrolled .brand-name { color: #1f2937; }
+.navbar.scrolled .brand-sub { color: #6b7280; }
+.navbar.scrolled .nav-item { color: #374151; }
+.navbar.scrolled .nav-item:hover { color: #1a56db; background: #eff6ff; }
+.navbar.scrolled .nav-item.active { color: #1a56db; }
+.navbar.scrolled .hamburger { color: #1f2937; }
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand-icon {
+  width: 44px; height: 44px;
+  background: linear-gradient(135deg, #1a56db, #3b82f6);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.brand-name {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1.2;
+}
+
+.brand-sub {
+  display: block;
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.7);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+/* Desktop nav */
+.nav-links-desktop {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+}
+
+.nav-item {
+  display: block;
+  color: rgba(255,255,255,0.88);
+  font-size: 0.88rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px 13px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.nav-item:hover { background: rgba(255,255,255,0.14); color: white; }
+.nav-item.active { background: rgba(255,255,255,0.18); color: white; font-weight: 700; }
+
+.nav-call {
+  margin-left: 8px;
+  padding: 9px 20px;
+  font-size: 0.88rem;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* ── Mobile Drawer ── */
+.drawer-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 1100;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.drawer-overlay.visible {
+  display: block;
+  opacity: 1;
+}
+
+.drawer {
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  width: 280px;
+  background: white;
+  z-index: 1200;
+  transform: translateX(-100%);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 30px rgba(0,0,0,0.15);
+}
+
+.drawer.open { transform: translateX(0); }
+
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 16px;
+  border-bottom: 1px solid #f3f4f6;
+  background: #0f172a;
+}
+
+.drawer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.drawer-close {
+  background: rgba(255,255,255,0.12);
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 34px; height: 34px;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s;
+}
+
+.drawer-close:hover { background: rgba(255,255,255,0.22); }
+
+.drawer-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 12px;
+  gap: 4px;
+  overflow-y: auto;
+}
+
+.drawer-link {
+  display: block;
+  color: #374151;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 13px 16px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  text-align: left;
+}
+
+.drawer-link:hover { background: #eff6ff; color: #1a56db; }
+.drawer-link.active { background: #eff6ff; color: #1a56db; border-left: 3px solid #1a56db; }
+
+.drawer-footer {
+  padding: 16px;
+  border-top: 1px solid #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.drawer-call {
+  width: 100%;
+  justify-content: center;
+  padding: 13px;
+}
+
+.drawer-wa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  padding: 13px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.drawer-wa:hover { background: #1ebe57; }
+
+@media (max-width: 900px) {
+  .hamburger { display: block; }
+  .nav-links-desktop { display: none; }
+}

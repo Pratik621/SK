@@ -1,0 +1,132 @@
+.process { background: white; }
+
+.process-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #1a56db, #60a5fa);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.process-step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.process-step.left {
+  flex-direction: row;
+  padding-right: calc(50% + 40px);
+}
+
+.process-step.right {
+  flex-direction: row-reverse;
+  padding-left: calc(50% + 40px);
+}
+
+.step-content {
+  padding: 24px;
+  flex: 1;
+  position: relative;
+}
+
+.step-content::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 2px;
+  background: #1a56db;
+  transform: translateY(-50%);
+}
+
+.process-step.left .step-content::after {
+  right: -30px;
+}
+
+.process-step.right .step-content::after {
+  left: -30px;
+}
+
+.step-icon {
+  width: 48px;
+  height: 48px;
+  background: #eff6ff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a56db;
+  margin-bottom: 12px;
+  transition: all 0.3s;
+}
+
+.step-content:hover .step-icon {
+  background: #1a56db;
+  color: white;
+}
+
+.step-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 6px;
+}
+
+.step-desc {
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.step-node {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44px;
+  height: 44px;
+  background: #1a56db;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 0 0 6px white, 0 0 0 8px #bfdbfe;
+  flex-shrink: 0;
+}
+
+.step-number {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+@media (max-width: 700px) {
+  .timeline-line { left: 22px; }
+
+  .process-step.left,
+  .process-step.right {
+    flex-direction: row;
+    padding-right: 0;
+    padding-left: 70px;
+  }
+
+  .step-node {
+    position: absolute;
+    left: 0;
+    transform: none;
+  }
+
+  .step-content::after { display: none; }
+}

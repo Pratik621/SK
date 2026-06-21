@@ -1,0 +1,121 @@
+.quality { background: #f8faff; padding-bottom: 80px; }
+
+.quality-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #1a56db 100%);
+  padding: 70px 0;
+  margin-bottom: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.quality-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.quality-hero-inner {
+  text-align: center;
+  color: white;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .quality-hero-inner { text-align: left; margin: 0; }
+  .quality-hero-inner p { max-width: 100%; }
+}
+
+.quality-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.9);
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.quality-hero-inner h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 900;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+
+.quality-hero-inner h2 span {
+  background: linear-gradient(90deg, #60a5fa, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.quality-hero-inner p {
+  color: rgba(255,255,255,0.8);
+  line-height: 1.75;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.quality-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.pillar-card {
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.pillar-icon {
+  width: 64px;
+  height: 64px;
+  background: #eff6ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a56db;
+  margin: 0 auto 16px;
+  transition: all 0.3s;
+}
+
+.pillar-card:hover .pillar-icon {
+  background: #1a56db;
+  color: white;
+  transform: scale(1.1);
+}
+
+.pillar-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.pillar-card p {
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .quality-pillars { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .quality-pillars { grid-template-columns: 1fr; }
+  .pillar-card { text-align: left; }
+  .pillar-icon { margin: 0 0 16px; }
+}

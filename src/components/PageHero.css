@@ -1,0 +1,63 @@
+.page-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #1a56db 100%);
+  padding: 120px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.page-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+  font-size: 0.85rem;
+}
+
+.breadcrumb a {
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover { color: white; }
+
+.breadcrumb svg { color: rgba(255,255,255,0.4); }
+
+.breadcrumb span {
+  color: rgba(255,255,255,0.9);
+  font-weight: 600;
+}
+
+.page-hero-inner h1 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 900;
+  color: white;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.page-hero-inner p {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.72);
+  max-width: 580px;
+  line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+  .page-hero { padding: 100px 0 48px; }
+  .page-hero-inner h1 { font-size: 1.8rem; }
+}
