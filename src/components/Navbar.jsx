@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Menu, X, Cog, Phone } from 'lucide-react';
 import './Navbar.css';
+import logo from "../../public/vite.png"
 
 const links = [
   { label: 'Home', to: '/' },
@@ -43,7 +44,9 @@ export default function Navbar() {
       <nav className={`navbar ${!transparent ? 'scrolled' : ''}`}>
         <div className="container navbar-inner">
           <NavLink to="/" className="navbar-brand">
-            <div className="brand-icon"><Cog size={22} /></div>
+            <div className="brand-icon">
+            <img src={logo} alt="" />
+            </div>
             <div>
               <span className="brand-name">SK ENGINEERING</span>
               <span className="brand-sub">Precision Manufacturing</span>

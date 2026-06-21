@@ -35,8 +35,8 @@ export default function Footer() {
               to clients worldwide since 2016.
             </p>
             <div className="footer-contact-list">
-              <a href="tel:+919999999999"><Phone size={15} /> +91 99999 99999</a>
-              <a href="mailto:info@skengineering.in"><Mail size={15} /> info@skengineering.in</a>
+              <a href="tel:+919999999999"><Phone size={15} /> +91 74991 65461</a>
+              <a href="mailto:skengg.129@gmail.com"><Mail size={15} /> skengg.129@gmail.com</a>
               <span><MapPin size={15} /> Bhosari, Pune, Maharashtra</span>
             </div>
             <a

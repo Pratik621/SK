@@ -40,14 +40,14 @@ export default function Contact() {
                 <div className="info-icon"><Phone size={22} /></div>
                 <div>
                   <strong>Phone / WhatsApp</strong>
-                  <p><a href="tel:+919999999999">+91 99999 99999</a></p>
+                  <p><a href="tel:+919999999999">+91 74991 65461</a></p>
                 </div>
               </div>
               <div className="info-item">
                 <div className="info-icon"><Mail size={22} /></div>
                 <div>
                   <strong>Email</strong>
-                  <p><a href="mailto:info@skengineering.in">info@skengineering.in</a></p>
+                  <p><a href="mailto:skengg.129@gmail.com">skengg.129@gmail.com</a></p>
                 </div>
               </div>
               <div className="info-item">
