@@ -5,6 +5,8 @@ import shaft2 from "../assets/shaft2.png"
 import shaft3 from "../assets/shaft3.png"
 import shaft4 from "../assets/shaft4.png"
 import shaft5 from "../assets/shaft5.png"
+import shaft6 from "../assets/shaft6.png"
+
 
 const productCategories = [
   {
@@ -105,8 +107,11 @@ export default function Products() {
       <img src={shaft4} alt="Engineering Shaft" />
     </div>
 
-     <div className="shaft-card">
+     {/* <div className="shaft-card">
       <img src={shaft5} alt="Engineering Shaft" />
+    </div> */}
+    <div className="shaft-card">
+      <img src={shaft6} alt="Engineering Shaft" />
     </div>
   </div>
 </section>
