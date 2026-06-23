@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import SplashScreen from './components/SplashScreen';
 import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
@@ -16,6 +17,7 @@ import './index.css';
 export default function App() {
   return (
     <BrowserRouter>
+      <SplashScreen />
       <ScrollToTop />
       <Navbar />
       <main>
