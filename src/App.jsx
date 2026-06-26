@@ -17,10 +17,14 @@ import './index.css';
 export default function App() {
   return (
     <BrowserRouter>
+      {/* Skip to main content — keyboard / screen reader accessibility */}
+      <a href="#main-content" className="skip-to-content">
+        Skip to main content
+      </a>
       <SplashScreen />
       <ScrollToTop />
       <Navbar />
-      <main>
+      <main id="main-content" role="main">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />

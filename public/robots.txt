@@ -1,0 +1,33 @@
+# robots.txt — SK ENGINEERING
+# https://www.skengineering.in
+
+User-agent: *
+Allow: /
+
+# Block private/admin paths
+Disallow: /admin
+Disallow: /admin/
+Disallow: /login
+Disallow: /dashboard
+Disallow: /api
+Disallow: /api/
+Disallow: /private
+Disallow: /private/
+
+# Block common CMS/framework internals
+Disallow: /*.json$
+Disallow: /src/
+
+# Allow Googlebot images
+User-agent: Googlebot-Image
+Allow: /
+
+# Allow Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Sitemap
+Sitemap: https://www.skengineering.in/sitemap.xml
+
+# Crawl delay for polite crawling
+Crawl-delay: 1

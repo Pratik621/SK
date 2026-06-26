@@ -41,7 +41,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`navbar ${!transparent ? 'scrolled' : ''}`}>
+      <nav className={`navbar ${!transparent ? 'scrolled' : ''}`} role="navigation" aria-label="Main navigation">
         <div className="container navbar-inner">
           <NavLink to="/" className="navbar-brand">
             <div className="brand-icon">
@@ -53,7 +53,7 @@ export default function Navbar() {
             </div>
           </NavLink>
 
-          <ul className="nav-links-desktop">
+          <ul className="nav-links-desktop" role="list">
             {links.map(l => (
               <li key={l.to}>
                 <NavLink
@@ -79,10 +79,21 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile Drawer Overlay */}
-      <div className={`drawer-overlay ${open ? 'visible' : ''}`} onClick={() => setOpen(false)} />
+      <div
+        className={`drawer-overlay ${open ? 'visible' : ''}`}
+        onClick={() => setOpen(false)}
+        role="button"
+        aria-label="Close navigation menu"
+        tabIndex={open ? 0 : -1}
+      />
 
       {/* Mobile Drawer — slides in from LEFT */}
-      <div className={`drawer ${open ? 'open' : ''}`}>
+      <div
+        className={`drawer ${open ? 'open' : ''}`}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Navigation menu"
+      >
         <div className="drawer-header">
           <div className="drawer-brand">
             <div className="brand-icon">
